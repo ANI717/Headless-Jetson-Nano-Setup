@@ -60,5 +60,5 @@ Ref: https://github.com/NVIDIA-AI-IOT/jetcard.</br>
 ```
 git clone https://github.com/NVIDIA-AI-IOT/jetcard
 cd jetcard
-chmod + install.sh && ./install.sh
+chmod +x install.sh && ./install.sh
 ```
