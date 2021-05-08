@@ -30,7 +30,7 @@ Go through rest of the steps with default settings.
 Once completed, reboot Jetson Nano.
 
 ## Wifi Connection Setup
-Open Putty and connect using host name **192.168.55.1**.<br/>
+Open Putty and connect using host name **192.168.55.1**<br/>
 Run following command to check wlan device status.</br>
 ```
 nmcli device
