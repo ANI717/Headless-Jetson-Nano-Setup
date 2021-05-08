@@ -20,5 +20,4 @@ Power On the Jetson Nano and wait for 1-2 minutes.</br>
 Download PuTTY from [here](https://www.putty.org/)<br/>
 Open Putty, select connection type **serial**.<br/>
 The serial line value **COM_** can be found from **Device Manager > Ports (COM&LPT) > USB Serial Device (COM_)** in windows.</br>
-Open Putty with host name **192.168.55.1**<br/>
-Go through initial setup until network connection.</br>
+Once connected, go through initial setup until network connection.</br>
