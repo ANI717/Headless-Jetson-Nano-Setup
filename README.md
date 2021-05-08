@@ -39,7 +39,7 @@ Run following command and reboot Jetson Nano.</br>
 ```
 sudo systemctl restart network-manager.service
 ```
-Run following command to detect availability of wifi SSID.</br>
+Run following command to detect availability of your wifi SSID.</br>
 ```
 nmcli device wifi list
 ```
