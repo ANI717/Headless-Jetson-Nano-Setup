@@ -24,11 +24,26 @@ The serial line value **COM#** can be found from following in Windows OS.</br>
 Device Manager > Ports (COM&LPT) > USB Serial Device (COM#)
 ```
 Once connected, go through initial setup until Network Configuration.</br>
-Select **dummy0: unknown interface**.</b>
+Select **dummy0: ....**.</b>
 Once it fails to connect, select **Do not configure....**</br>
 Go through rest of the steps with default settings.
 Once completed, reboot Jetson Nano.
 
-## Setup Wifi Connection
+## Wifi Connection Setup
 Open Putty with host name **192.168.55.1**.<br/>
-Run following commands in PuTTY.
+Run following command in PuTTY to find out wlan0 device is status.</br>
+```
+nmcli device
+```
+Run following command and reboot Jetson Nano.</br>
+```
+sudo systemctl restart network-manager.service
+```
+Run following command to detect availability of wifi SSID.</br>
+```
+nmcli device wifi list
+```
+Connect with following command.</br>
+```
+sudo nmcli device wifi connect <SSID> password <Wifi_Password>
+```
