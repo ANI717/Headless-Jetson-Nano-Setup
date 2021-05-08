@@ -19,8 +19,8 @@ Connect Jetson Nano with a PC/Laptop using Micro-USB cable.</br>
 Power On the Jetson Nano and wait for 1-2 minutes.</br>
 Download PuTTY from [here](https://www.putty.org/).<br/>
 Open Putty, select connection type **serial**.<br/>
-The serial line value **COM_** can be found from following in windows.</br>
+The serial line value **COM#** can be found from following in windows.</br>
 ```
-Device Manager > Ports (COM&LPT) > USB Serial Device (COM_)
+Device Manager > Ports (COM&LPT) > USB Serial Device (COM#)
 ```
 Once connected, go through initial setup until network connection.</br>
