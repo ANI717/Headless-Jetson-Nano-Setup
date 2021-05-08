@@ -52,7 +52,7 @@ Run following command to get the IP address (2nd one).</br>
 hostname -I
 ```
 Connect using the IP address.<br/>
-Once login complete, the Micro-USB cable can be removed.
+Once login complete, the Micro-USB cable can be disconnected.
 
 ## Install Jetcard AI-IOT Services
 Run following command.
