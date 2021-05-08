@@ -30,7 +30,7 @@ Go through rest of the steps with default settings.
 Once completed, reboot Jetson Nano.
 
 ## Wifi Connection Setup
-Open Putty with host name **192.168.55.1**.<br/>
+Open Putty and connect using host name **192.168.55.1**.<br/>
 Run following command in PuTTY to find out wlan0 device is status.</br>
 ```
 nmcli device
@@ -51,5 +51,5 @@ Run following command to get the IP address (2nd one).</br>
 ```
 hostname -I
 ```
-Open Putty with the IP address.<br/>
+Connect using the IP address.<br/>
 Once login complete, the Micro-USB cable can be removed.
