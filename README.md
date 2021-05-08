@@ -9,3 +9,6 @@ Headless Jetson Nano Setup with Wifi Serial Port in Private Network Without Moni
 * [Animesh Bala Ani](https://animeshani.com/)
 * [Dr. Li Bai](https://engineering.temple.edu/about/faculty-staff/li-bai-lbai)
 
+## Instruction
+Download balenaEtcher from https://www.balena.io/etcher/.</b>
+Install Proper Jetson Nano Image with balenaEtcher on a microSD card.</b>
