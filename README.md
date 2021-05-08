@@ -47,3 +47,8 @@ Connect with following command.</br>
 ```
 sudo nmcli device wifi connect <SSID> password <Wifi_Password>
 ```
+Run following command to get IP address *###.###.###.###*.</br>
+```
+hostname -I
+```
+Open Putty with IP address *###.###.###.###*.<br/>
