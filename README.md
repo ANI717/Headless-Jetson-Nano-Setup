@@ -31,7 +31,7 @@ Once completed, reboot Jetson Nano.
 
 ## Wifi Connection Setup
 Open Putty and connect using host name **192.168.55.1**.<br/>
-Run following command in PuTTY to find out wlan0 device is status.</br>
+Run following command to check wlan device status.</br>
 ```
 nmcli device
 ```
@@ -43,7 +43,7 @@ Run following command to detect availability of your wifi SSID.</br>
 ```
 nmcli device wifi list
 ```
-Connect with following command.</br>
+Connect to wifi using following command.</br>
 ```
 sudo nmcli device wifi connect <SSID> password <Wifi_Password>
 ```
