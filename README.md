@@ -24,7 +24,7 @@ The serial line value **COM#** can be found from following in Windows OS.</br>
 Device Manager > Ports (COM&LPT) > USB Serial Device (COM#)
 ```
 Once connected, go through initial setup until Network Configuration.</br>
-Select **dummy0: ....**.</b>
+Select **dummy0: ....**.</br>
 Once it fails to connect, select **Do not configure....**</br>
 Go through rest of the steps with default settings.
 Once completed, reboot Jetson Nano.
