@@ -54,7 +54,7 @@ hostname -I
 Connect using the IP address.<br/>
 Once login complete, the Micro-USB cable can be removed.
 
-## Install Jetcard Services
+## Install Jetcard AI-IOT Services
 Run following command.
 Ref: https://github.com/NVIDIA-AI-IOT/jetcard
 ```
