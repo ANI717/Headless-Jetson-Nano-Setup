@@ -54,11 +54,14 @@ hostname -I
 Connect using the IP address.<br/>
 Once login complete, the Micro-USB cable can be disconnected.
 
-## Install Jetcard AI-IOT Services
-Run following commands.</br>
-Ref: https://github.com/NVIDIA-AI-IOT/jetcard.</br>
+## Install Jupyter Lab
 ```
-git clone https://github.com/NVIDIA-AI-IOT/jetcard
-cd jetcard
-chmod +x install.sh && ./install.sh
+cd ~/
+sudo apt install python3-smbus curl cmake -y
+git clone https://github.com/lbaitemple/jetbot_nividia_nano
+mv jetbot_nividia_nano jetbot
+cd ~/jetbot
+sudo python3 setup.py install
+chmod +x jupyter.sh
+./jupyter.sh 
 ```
