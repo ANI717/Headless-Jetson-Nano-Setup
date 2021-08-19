@@ -23,7 +23,7 @@ Device Manager > Ports (COM&LPT) > USB Serial Device (COM#)
 ```
 Once connected, go through initial setup until Network Configuration.</br>
 Select `dummy0: Unknown Interface`</br>
-Once it fails to connect, select `Do not configure....`</br>
+Once it fails to connect, select `Do not configure the network at this time`</br>
 Go through the rest of the steps with the default settings.
 Once completed, reboot the Jetson Nano.
 
