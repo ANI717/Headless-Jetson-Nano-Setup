@@ -28,7 +28,7 @@ Go through the rest of the steps with the default settings.
 Once completed, wait couple of minutes and go to next step.
 
 ## Wifi Connection Setup
-Open Putty and connect using host name `192.168.55.1`<br/>
+Open Putty and connect using host name `192.168.55.1` or using COM Port<br/>
 Run following command and reboot Jetson Nano.</br>
 ```
 sudo systemctl restart network-manager.service
