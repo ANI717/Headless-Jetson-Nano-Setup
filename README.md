@@ -25,7 +25,7 @@ Once connected, go through initial setup until Network Configuration.</br>
 Select `dummy0: Unknown Interface`</br>
 Once it fails to connect, select `Do not configure the network at this time`</br>
 Go through the rest of the steps with the default settings.
-Once completed, reboot the Jetson Nano.
+Once completed, wait couple of minutes and go to next step.
 
 ## Wifi Connection Setup
 Open Putty and connect using host name `192.168.55.1`<br/>
