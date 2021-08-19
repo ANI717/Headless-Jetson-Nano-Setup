@@ -6,7 +6,6 @@ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 python3 -m pip install setuptools cffi git+https://github.com/ipython/traitlets@4.x jupyter jupyterlab
 
-export PATH=$PATH:~/.local/bin
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install @jupyterlab/statusbar
 jupyter lab --generate-config
