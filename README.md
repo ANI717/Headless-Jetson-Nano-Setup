@@ -49,10 +49,18 @@ Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
 ## Install Jupyter Lab
-Run following command to update package list and upgrade installed packages.
+Run following commands to install JupytarLab
 ```
-sudo apt update && sudo apt upgrade -y
+cd ~
+sudo apt update
+sudo apt install -y python3-pip curl libffi-dev
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install -y nodejs
+python3 -m pip install setuptools cffi git+https://github.com/ipython/traitlets@4.x
+
+
 ```
+
 Setup I2C connection and other required packages.
 ```
 sudo apt update && sudo apt upgrade -y
