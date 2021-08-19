@@ -1,8 +1,8 @@
 <p align="center">
-  <h1 align="center">Headless Jetson Nano Setup with Micro-USB cable Without Monitor</h1>
+  <h1 align="center">Headless Jetson Nano Setup with JupyterLab Support</h1>
 </p>
 
-Headless Jetson Nano Setup with with Micro-USB Without Monitor. USB Dongle is required for Wifi Connection .
+Headless Jetson Nano setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included.
 
 ## Colaborators
 [Computer Fusion Laboratory (CFL) - Temple University College of Engineering](https://sites.temple.edu/cflab/people/)
