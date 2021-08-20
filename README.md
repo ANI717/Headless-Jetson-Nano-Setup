@@ -48,5 +48,8 @@ hostname -I
 Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
-## Install Jupyter Lab.
-Follow instructions from [here](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
+## Install Jupyter Lab
+Follow instructions from [here](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch).
+
+## Install ROS2 Dashing
+Follow instructions from [here](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
