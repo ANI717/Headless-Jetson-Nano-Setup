@@ -9,7 +9,7 @@ Headless Jetson Nano setup with with Micro-USB cable Without Using Monitor. USB 
 
 ## Install Jetson Nano Image OS on microSD card
 Download [balenaEtcher](https://www.balena.io/etcher/) and install it.</br>
-Download the latest [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/embedded/downloads), and write it on a microSD card with **balenaEtcher**.</br>
+Download [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image-45-0), and write it on a microSD card with **balenaEtcher**.</br>
 
 ## Boot Jetson Nano
 Insert the microSD card to Jetson Nano.</br>
