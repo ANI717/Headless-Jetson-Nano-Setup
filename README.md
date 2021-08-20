@@ -61,14 +61,5 @@ chmod +x ./jupyter.sh && ./jupyter.sh
 ```
 [Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
 
-## 
-```
-cd ~/headless_jetson_nano_setup
-python3 create_stats_service.py
-sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
-sudo systemctl enable jetbot_stats
-sudo systemctl start jetbot_stats
-```
-
 ## Install ROS2 Dashing
 Follow instructions from [here](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
