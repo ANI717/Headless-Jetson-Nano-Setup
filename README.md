@@ -48,20 +48,5 @@ hostname -I
 Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
-## Install Jupyter LabSetup I2C connection and other required packages.
-```
-sudo apt update && sudo apt upgrade -y
-sudo usermod -aG i2c $USER
-sudo apt-get update
-sudo apt install python3-pip python3-pil -y
-```
-Setup Jupytar Lab
-```
-cd ~/
-sudo apt install python3-smbus curl cmake -y
-git clone https://github.com/lbaitemple/jetbot_nividia_nano
-cd ~/jetbot_nividia_nano
-sudo python3 setup.py install
-chmod +x jupyter.sh
-./jupyter.sh 
-```
+## Install Jupyter Lab.
+Follow instructions from [here](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
