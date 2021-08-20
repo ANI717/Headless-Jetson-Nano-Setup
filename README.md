@@ -53,13 +53,21 @@ Once login completes, the Micro-USB cable can be disconnected.
 sudo usermod -aG i2c $USER
 ```
 
-## Install Jupyter Lab
+## Download Repository
 ```
 git clone https://github.com/ANI717/headless_jetson_nano_setup
+```
+
+## Install Jupyter Lab
+```
 cd ~/headless_jetson_nano_setup
 chmod +x ./jupyter.sh && ./jupyter.sh
 ```
 [Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
 
 ## Install ROS2 Dashing
-Follow instructions from [here](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
+```
+cd ~/headless_jetson_nano_setup
+chmod +x ./dashing.sh && ./dashing.sh
+```
+[Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
