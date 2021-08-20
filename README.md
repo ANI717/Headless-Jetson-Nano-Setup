@@ -57,7 +57,7 @@ sudo usermod -aG i2c $USER
 ```
 git clone https://github.com/ANI717/headless_jetson_nano_setup
 cd ~/headless_jetson_nano_setup
-chmod +x ./jupytar.sh && ./jupytar.sh
+chmod +x ./jupyter.sh && ./jupyter.sh
 ```
 [Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
 
