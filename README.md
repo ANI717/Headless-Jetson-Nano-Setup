@@ -56,7 +56,7 @@ sudo apt update
 sudo apt install -y python3-pip curl libffi-dev
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
-sudo pip3 install setuptools cffi git+https://github.com/ipython/traitlets@4.x jupyter jupyterlab
+sudo pip3 install setuptools cffi git+https://github.com/ipython/traitlets@4.x
 sudo pip3 install jupyter jupyterlab
 
 sudo jupyter labextension install @jupyter-widgets/jupyterlab-manager
