@@ -48,8 +48,12 @@ hostname -I
 Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
+## Enable I2C Permissions
+```
+sudo usermod -aG i2c $USER
+```
+
 ## Install Jupyter Lab
-Run the following commands.
 ```
 sudo apt update
 sudo apt install -y python3-pip curl libffi-dev
