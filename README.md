@@ -61,7 +61,7 @@ sudo pip3 install jupyter jupyterlab
 
 sudo jupyter labextension install @jupyter-widgets/jupyterlab-manager
 sudo jupyter labextension install @jupyterlab/statusbar
-jupyter lab --generate-config
+sudo jupyter lab --generate-config
 python3 -c "from jupyter_server.auth.security import set_password; set_password('jetbot', '$HOME/.jupyter/jupyter_server_config.json')"
 
 echo "c.NotebookApp.token = ''" >> $HOME/.jupyter/jupyter_lab_config.py
