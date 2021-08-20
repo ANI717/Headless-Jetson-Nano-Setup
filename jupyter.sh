@@ -18,8 +18,6 @@ echo "c.NotebookApp.token = ''" >> $HOME/.jupyter/jupyter_lab_config.py
 echo "c.NotebookApp.password_required = True" >> $HOME/.jupyter/jupyter_lab_config.py
 echo "c.NotebookApp.allow_credentials = False" >> $HOME/.jupyter/jupyter_lab_config.py
 
-git clone https://github.com/ANI717/headless_jetson_nano_setup
-cd ~/headless_jetson_nano_setup
 python3 create_jupyter_service.py
 sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
