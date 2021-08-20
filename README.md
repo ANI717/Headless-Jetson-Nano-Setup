@@ -49,9 +49,8 @@ Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
 ## Install Jupyter Lab
-Follow instructions from [here](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch).
+Run the following commands.
 ```
-cd ~
 sudo apt update
 sudo apt install -y python3-pip curl libffi-dev
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -74,6 +73,10 @@ python3 create_jupyter_service.py
 sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
+```
+
+## 
+```
 python3 create_stats_service.py
 sudo mv jetbot_stats.service /etc/systemd/system/jetbot_stats.service
 sudo systemctl enable jetbot_stats
