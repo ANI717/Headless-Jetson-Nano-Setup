@@ -74,7 +74,7 @@ cd ~/headless_jetson_nano_setup
 chmod +x ./jupyter.sh && ./jupyter.sh
 ```
 Open Jupytar Lab in a browser with `<IP Address>:8888` link. Default password is `jetbot`.<br/> 
-The interface should look like this.<br/>
+The interface should look like this (without watermark).<br/>
 
 <img src="JupytarLab.png" alt="JupytarLab Interface" class="inline"/><br/>
 [Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
