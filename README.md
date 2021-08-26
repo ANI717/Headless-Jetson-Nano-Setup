@@ -12,7 +12,7 @@ Headless Jetson Nano setup with with Micro-USB cable Without Using Monitor. USB 
 * [Boot Jetson Nano](#boot) <br/>
 * [Wifi Connection Setup](#wifi) <br/>
 * [Enable I2C Permissions](#i2c) <br/>
-* [Download Repository](#repository) <br/>
+* [Download This Repository](#repository) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
 
