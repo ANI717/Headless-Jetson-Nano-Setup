@@ -85,7 +85,7 @@ The interface should look like this (without watermark).<br/>
 cd ~/headless_jetson_nano_setup
 chmod +x ./dashing.sh && ./dashing.sh
 ```
-[Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
+[Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
 
 ## Install Computer Vision Tools <a name="cv"></a>
 Installs `PyTorch`, `TorchVision` and `OpenCV`.<br/>
