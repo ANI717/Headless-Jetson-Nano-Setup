@@ -15,6 +15,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Download This Repository](#repository) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
+* [Install Computer Vision Tools](#cv) <br/>
 
 
 ## Install Jetson Nano Image OS on microSD card <a name="install"></a>
@@ -85,3 +86,12 @@ cd ~/headless_jetson_nano_setup
 chmod +x ./dashing.sh && ./dashing.sh
 ```
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html).
+
+## Install Computer Vision Tools <a name="cv"></a>
+```
+sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
+sudo python3 -m pip install numpy==1.19.4
+sudo python3 -m pip install --upgrade testresources setuptools protobuf
+wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
+sudo python3 -m pip install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision opencv-python
+```
