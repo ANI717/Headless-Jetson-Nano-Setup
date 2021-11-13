@@ -57,7 +57,7 @@ Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
 ## Install JetCard <a name="jetcard"></a>
-Install Jupytarlab and Computer Vision tools from [JetCard](https://github.com/NVIDIA-AI-IOT/jetcard).<br/>
+Install JupyterLab and Computer Vision tools from [JetCard](https://github.com/NVIDIA-AI-IOT/jetcard).<br/>
 ```
 git clone https://github.com/NVIDIA-AI-IOT/jetcard
 cd jetcard
