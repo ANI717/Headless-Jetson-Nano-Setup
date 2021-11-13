@@ -4,5 +4,5 @@
 sudo usermod -aG i2c $USER
 ./jupyter.sh
 ./jetbot_stats.sh
-./dashing.sh
 ./pytorch.sh
+./dashing.sh
