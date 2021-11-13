@@ -114,6 +114,7 @@ cd
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt 
 cd torch2trt 
 sudo -H python3 setup.py install --plugins
+echo  'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc 
 ```
 
 ## Install TensorFlow <a name="tf"></a>
