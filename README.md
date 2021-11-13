@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Headless Jetson Nano Setup with JupyterLab Support</h1>
+  <h1 align="center">Headless Jetson Nano Setup</h1>
 </p>
 
 Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included. ROS2 Dasing Installation Included. Torch, Torchvision and TensorFlow Installation Included.
