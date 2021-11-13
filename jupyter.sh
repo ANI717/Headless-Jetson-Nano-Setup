@@ -31,7 +31,6 @@ echo "c.NotebookApp.allow_credentials = False" >> $HOME/.jupyter/jupyter_lab_con
 
 # create jupyter service
 python3 create_jupyter_service.py
-python3 create_jupyter_service.py
 sudo mv jetbot_jupyter.service /etc/systemd/system/jetbot_jupyter.service
 sudo systemctl enable jetbot_jupyter
 sudo systemctl start jetbot_jupyter
