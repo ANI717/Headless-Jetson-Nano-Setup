@@ -14,6 +14,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Enable I2C Permissions](#i2c) <br/>
 * [Download This Repository](#repository) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
+* [Setup Jetbot Stats](#stats) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
 * [Install Computer Vision Tools](#cv) <br/>
 
@@ -79,6 +80,13 @@ The interface should look like this (without watermark).<br/>
 
 <img src="JupytarLab.png" alt="JupytarLab Interface" class="inline"/><br/>
 [Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
+
+## Setup Jetbot Stats <a name="stats"></a>
+Setup Jetbot Stats Service to show Jebot status in OLED display.<br/>
+```
+cd ~/headless_jetson_nano_setup
+chmod +x ./jetbot_stats.sh && ./jetbot_stats.sh
+```
 
 ## Install ROS2 Dashing <a name="ros2dashing"></a>
 ```
