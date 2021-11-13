@@ -9,7 +9,7 @@ Description=JetBot stats display service
 [Service]
 Type=simple
 User=%s
-ExecStart=/bin/sh -c "python3 -m stats"
+ExecStart=/bin/sh -c "python3 /etc/systemd/system/jetbot_stats.py"
 WorkingDirectory=%s
 Restart=always
 
