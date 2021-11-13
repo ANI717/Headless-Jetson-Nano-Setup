@@ -25,23 +25,15 @@ import Adafruit_SSD1306
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
-from jetbot.utils.utils import get_ip_address
+from .utils import get_ip_address
 
 import subprocess
 
 # 128x32 display with hardware I2C:
 disp = Adafruit_SSD1306.SSD1306_128_32(rst=None, i2c_bus=1, gpio=1) # setting gpio to 1 is hack to avoid platform detection
 
-while True:
-    
-    try:
-        # Try to connect to the OLED display module via I2C.
-        disp.begin()
-    except OSError as err:
-        print("OS error: {0}".format(err))
-        time.sleep(10)
-    else:
-        break
+# Initialize library.
+disp.begin()
 
 # Clear display.
 disp.clear()
