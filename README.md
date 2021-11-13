@@ -11,8 +11,9 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Jetson Nano Image OS on microSD card](#install) <br/>
 * [Boot Jetson Nano](#boot) <br/>
 * [Wifi Connection Setup](#wifi) <br/>
-* [Enable I2C Permissions](#i2c) <br/>
 * [Download This Repository](#repository) <br/>
+* [Install All Packages](#all) <br/>
+* [Enable I2C Permissions](#i2c) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Setup Jetbot Stats](#stats) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
@@ -61,14 +62,21 @@ hostname -I
 Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
-## Enable I2C Permissions <a name="i2c"></a>
-```
-sudo usermod -aG i2c $USER
-```
-
 ## Download Repository <a name="repository"></a>
 ```
 git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
+```
+
+## Install All Packages <a name="all"></a>
+Installs all packages except Tensorflow.<br/>
+```
+cd ~/Headless-Jetson-Nano-Setup
+chmod +x ./*.sh && ./install.sh
+```
+
+## Enable I2C Permissions <a name="i2c"></a>
+```
+sudo usermod -aG i2c $USER
 ```
 
 ## Install Jupyter Lab <a name="jupytarlab"></a>
