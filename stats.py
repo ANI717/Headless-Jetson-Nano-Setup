@@ -25,9 +25,26 @@ import Adafruit_SSD1306
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
-from utils import get_ip_address
 
 import subprocess
+
+
+def get_ip_address(interface):
+    try:
+        if network_interface_state(interface) == 'down':
+            return None
+        cmd = "ifconfig %s | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'" % interface
+        return subprocess.check_output(cmd, shell=True).decode('ascii')[:-1]
+    except:
+        return None
+
+def network_interface_state(interface):
+    try:
+        with open('/sys/class/net/%s/operstate' % interface, 'r') as f:
+            return f.read()
+    except:
+        return 'down' # default to down
+
 
 # 128x32 display with hardware I2C:
 disp = Adafruit_SSD1306.SSD1306_128_32(rst=None, i2c_bus=1, gpio=1) # setting gpio to 1 is hack to avoid platform detection
