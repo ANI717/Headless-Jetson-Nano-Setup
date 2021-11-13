@@ -16,7 +16,7 @@ sudo apt-get install -y python3-pip curl libffi-dev
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo -H pip3 install --upgrade pip setuptools
-sudo -H pip3 install setuptools cffi
+sudo -H pip3 install cffi
 
 # install jupyterlab
 sudo -H pip3 install jupyter jupyterlab
