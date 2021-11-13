@@ -96,13 +96,13 @@ chmod +x ./dashing.sh && ./dashing.sh
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
 
 ## Install Computer Vision Tools <a name="cv"></a>
-Installs `PyTorch`, `TorchVision` and `OpenCV`.<br/>
+Installs `PyTorch` and `TorchVision`.<br/>
 ```
 sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
 sudo python3 -m pip install numpy==1.19.4
 sudo python3 -m pip install --upgrade testresources setuptools protobuf
 wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
-sudo python3 -m pip install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision opencv-python
+sudo python3 -m pip install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision
 ```
 [PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
 
