@@ -11,11 +11,8 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Jetson Nano Image OS on microSD card](#install) <br/>
 * [Boot Jetson Nano](#boot) <br/>
 * [Wifi Connection Setup](#wifi) <br/>
-* [Enable I2C Permissions](#i2c) <br/>
-* [Download This Repository](#repository) <br/>
-* [Install Jupyter Lab](#jupytarlab) <br/>
+* [Install JetCard](#jetcard) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
-* [Install Computer Vision Tools](#cv) <br/>
 
 
 ## Install Jetson Nano Image OS on microSD card <a name="install"></a>
@@ -59,26 +56,12 @@ hostname -I
 Open Putty and connect using the IP address.<br/>
 Once login completes, the Micro-USB cable can be disconnected.
 
-## Enable I2C Permissions <a name="i2c"></a>
+## Install JetCard <a name="jetcard"></a>
 ```
-sudo usermod -aG i2c $USER
+git clone https://github.com/NVIDIA-AI-IOT/jetcard
+cd jetcard
+./install.sh <password>
 ```
-
-## Download Repository <a name="repository"></a>
-```
-git clone https://github.com/ANI717/headless_jetson_nano_setup
-```
-
-## Install Jupyter Lab <a name="jupytarlab"></a>
-```
-cd ~/headless_jetson_nano_setup
-chmod +x ./jupyter.sh && ./jupyter.sh
-```
-Open Jupytar Lab in a browser with `<IP Address>:8888` link. Default password is `jetbot`.<br/> 
-The interface should look like this (without watermark).<br/>
-
-<img src="JupytarLab.png" alt="JupytarLab Interface" class="inline"/><br/>
-[Reference](https://github.com/NVIDIA-AI-IOT/jetbot/wiki/Create-SD-Card-Image-From-Scratch)
 
 ## Install ROS2 Dashing <a name="ros2dashing"></a>
 ```
@@ -86,24 +69,3 @@ cd ~/headless_jetson_nano_setup
 chmod +x ./dashing.sh && ./dashing.sh
 ```
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
-
-## Install Computer Vision Tools <a name="cv"></a>
-Installs `PyTorch`, `TorchVision` and `OpenCV`.<br/>
-```
-sudo apt-get install -y python3-pip libopenblas-base libopenmpi-dev
-sudo python3 -m pip install numpy==1.19.4
-sudo python3 -m pip install --upgrade testresources setuptools protobuf
-wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
-sudo python3 -m pip install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision opencv-python
-```
-[PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
-
-Installs `TensorFLow`.<br/>
-```
-sudo apt-get update
-sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
-sudo apt-get install python3-pip
-sudo pip3 install -U pip testresources setuptools==49.6.0 
-sudo pip3 install -U numpy==1.19.4 future==0.18.2 mock==3.0.5 h5py==2.10.0 keras_preprocessing==1.1.1 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11
-sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v45 tensorflow
-```
