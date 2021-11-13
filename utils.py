@@ -24,7 +24,7 @@ def platform_is_nano():
     return 'jetson-nano' in platform_model_str()
 
 
-def ip_address(interface):
+def get_ip_address(interface):
     try:
         if network_interface_state(interface) == 'down':
             return None
