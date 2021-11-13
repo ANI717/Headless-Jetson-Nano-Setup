@@ -10,6 +10,7 @@ date
 # install dependency
 sudo apt-get update
 sudo apt-get install -y python3-pip python3-setuptools python3-pil
+sudo -H pip3 install --upgrade pip setuptools
 sudo -H pip3 install Adafruit_SSD1306
 
 # create jetbot_stats service
