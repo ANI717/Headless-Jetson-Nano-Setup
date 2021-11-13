@@ -10,7 +10,7 @@ date
 # install dependency
 sudo apt-get update
 sudo apt-get install -y python3-pip python3-setuptools libopenblas-base libopenmpi-dev
-sudo -H pip3 install --upgrade pip setuptools testresources protobuf
+sudo -H pip3 install --upgrade pip testresources protobuf
 sudo -H pip3 install numpy==1.19.4
 
 # install torch and torchvision
