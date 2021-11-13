@@ -2,7 +2,7 @@
   <h1 align="center">Headless Jetson Nano Setup for Jetbot Build</h1>
 </p>
 
-Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included. JupyterLab doesn't need docker. ROS2 Dasing Installation Included. Torch, Torchvision and TensorFlow Installation Included.
+Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included. JupyterLab doesn't need docker. Torch, Torchvision and TensorFlow Installation Included. ROS2 Dasing Installation Included.
 
 ## Colaborators
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
@@ -16,10 +16,9 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Enable I2C Permissions](#i2c) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Setup Jetbot Stats](#stats) <br/>
-* [Install ROS2 Dashing](#ros2dashing) <br/>
 * [Install Torch](#torch) <br/>
 * [Install TensorFlow](#tf) <br/>
-
+* [Install ROS2 Dashing](#ros2dashing) <br/>
 
 ## Install Jetson Nano Image OS on microSD card <a name="install"></a>
 Download [balenaEtcher](https://www.balena.io/etcher/) and install it.</br>
@@ -99,13 +98,6 @@ cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./jetbot_stats.sh && ./jetbot_stats.sh
 ```
 
-## Install ROS2 Dashing <a name="ros2dashing"></a>
-```
-cd ~/Headless-Jetson-Nano-Setup
-chmod +x ./dashing.sh && ./dashing.sh
-```
-[Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
-
 ## Install Torch <a name="torch"></a>
 Installs `PyTorch` and `TorchVision`.<br/>
 ```
@@ -124,3 +116,10 @@ sudo -H pip3 install -U pip testresources setuptools==49.6.0
 sudo -H pip3 install -U numpy==1.19.4 future==0.18.2 mock==3.0.5 h5py==2.10.0 keras_preprocessing==1.1.1 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11
 sudo -H pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v45 tensorflow
 ```
+
+## Install ROS2 Dashing <a name="ros2dashing"></a>
+```
+cd ~/Headless-Jetson-Nano-Setup
+chmod +x ./dashing.sh && ./dashing.sh
+```
+[Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
