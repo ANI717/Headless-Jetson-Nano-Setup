@@ -67,12 +67,12 @@ sudo usermod -aG i2c $USER
 
 ## Download Repository <a name="repository"></a>
 ```
-git clone https://github.com/ANI717/headless_jetson_nano_setup
+git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
 ```
 
 ## Install Jupyter Lab <a name="jupytarlab"></a>
 ```
-cd ~/headless_jetson_nano_setup
+cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./jupyter.sh && ./jupyter.sh
 ```
 Open Jupytar Lab in a browser with `<IP Address>:8888` link. Default password is `jetbot`.<br/> 
@@ -84,13 +84,13 @@ The interface should look like this (without watermark).<br/>
 ## Setup Jetbot Stats <a name="stats"></a>
 Setup Jetbot Stats Service to show Jebot status in OLED display.<br/>
 ```
-cd ~/headless_jetson_nano_setup
+cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./jetbot_stats.sh && ./jetbot_stats.sh
 ```
 
 ## Install ROS2 Dashing <a name="ros2dashing"></a>
 ```
-cd ~/headless_jetson_nano_setup
+cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./dashing.sh && ./dashing.sh
 ```
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
