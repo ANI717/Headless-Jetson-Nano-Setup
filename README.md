@@ -16,7 +16,8 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Setup Jetbot Stats](#stats) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
-* [Install Computer Vision Tools](#cv) <br/>
+* [Install Torch](#torch) <br/>
+* [Install TensorFlow](#tf) <br/>
 
 
 ## Install Jetson Nano Image OS on microSD card <a name="install"></a>
@@ -95,18 +96,15 @@ chmod +x ./dashing.sh && ./dashing.sh
 ```
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
 
-## Install Computer Vision Tools <a name="cv"></a>
+## Install Torch <a name="torch"></a>
 Installs `PyTorch` and `TorchVision`.<br/>
 ```
-sudo apt-get update
-sudo apt-get install -y python3-pip python3-setuptools libopenblas-base libopenmpi-dev
-sudo -H python3 -m pip install --upgrade testresources setuptools protobuf
-sudo -H pip3 install numpy==1.19.4
-wget https://nvidia.box.com/shared/static/h1z9sw4bb1ybi0rm3tu8qdj8hs05ljbm.whl -O torch-1.9.0-cp36-cp36m-linux_aarch64.whl
-sudo -H python3 -m pip install torch-1.9.0-cp36-cp36m-linux_aarch64.whl torchvision
+cd ~/Headless-Jetson-Nano-Setup
+chmod +x ./pytorch.sh && ./pytorch.sh
 ```
 [PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
 
+## Install TensorFlow <a name="tf"></a>
 Installs `TensorFLow`.<br/>
 ```
 sudo apt-get update
