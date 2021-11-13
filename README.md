@@ -17,7 +17,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Setup Jetbot Stats](#stats) <br/>
 * [Install Torch](#torch) <br/>
-* [Install Torch2trt](#torch2trt) <br/>
+* [Install Torch2trt and ONNX](#torch2trt) <br/>
 * [Install TensorFlow](#tf) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
 
@@ -108,13 +108,14 @@ chmod +x ./pytorch.sh && ./pytorch.sh
 ```
 [PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
 
-## Install Torch2trt <a name="torch2trt"></a>
+## Install Torch2trt and ONNX <a name="torch2trt"></a>
 ```
 cd
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt 
 cd torch2trt 
 sudo -H python3 setup.py install --plugins
 echo  'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc 
+sudo -H pip3 install onnx
 ```
 
 ## Install TensorFlow <a name="tf"></a>
