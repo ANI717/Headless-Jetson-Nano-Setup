@@ -116,6 +116,7 @@ cd torch2trt
 sudo -H python3 setup.py install --plugins
 echo  'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc 
 sudo -H pip3 install onnx
+sudo -H pip3 install numpy==1.19.4
 ```
 
 ## Install TensorFlow <a name="tf"></a>
