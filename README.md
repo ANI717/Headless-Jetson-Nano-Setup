@@ -68,7 +68,9 @@ git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
 ```
 
 ## Install All Packages <a name="all"></a>
-Installs all packages except Tensorflow.<br/>
+Installs `Jupyter Lab`, `ROS2 Dashing`, `PyTorch`, `Torchvision`.<br/>
+Enable I2C Permissions.<br/>
+Sets Jetbot Stats.<br/>
 ```
 cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./*.sh && ./install.sh
