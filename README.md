@@ -70,6 +70,7 @@ git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
 Installs `Jupyter Lab`, `ROS2 Dashing`, `PyTorch`, `Torchvision`.<br/>
 Enable I2C Permissions.<br/>
 Sets Jetbot Stats.<br/>
+Takes around 17 minutes.<br/>
 ```
 cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./*.sh && ./install.sh
