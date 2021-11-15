@@ -20,6 +20,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Torch2trt and ONNX](#torch2trt) <br/>
 * [Install TensorFlow](#tf) <br/>
 * [Install ROS2 Dashing](#ros2dashing) <br/>
+* [Warning](#warn) <br/>
 
 ## Install Jetson Nano Image OS on microSD card <a name="install"></a>
 Download [balenaEtcher](https://www.balena.io/etcher/) and install it.</br>
@@ -115,7 +116,7 @@ git clone https://github.com/NVIDIA-AI-IOT/torch2trt
 cd torch2trt 
 sudo -H python3 setup.py install --plugins
 echo  'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc 
-sudo -H pip3 install onnx
+sudo -H pip3 install onnx onnxruntime
 sudo -H pip3 install numpy==1.19.4
 ```
 
@@ -136,3 +137,8 @@ cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./dashing.sh && ./dashing.sh
 ```
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
+
+## Warning <a name="warn"></a>
+Installing different vesrion of `OpenCV` and `NumPy` package or upgrading them will break `Gstreamer Pipeline`.<br/>
+Updating `Setuptools` will generate deprication error during ROS2 workspace building.<br/>
+
