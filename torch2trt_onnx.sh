@@ -22,3 +22,5 @@ sudo -H pip3 install numpy==1.19.4
 
 # record script end time
 date
+
+cd ~/Headless-Jetson-Nano-Setup
