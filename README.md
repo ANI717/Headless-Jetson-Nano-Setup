@@ -3,7 +3,7 @@
 </p>
 
 <p align="justify">
-Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included. JupyterLab doesn't need docker. Torch, Torch2trt, ONNX, Torchvision and TensorFlow Installation Included. ROS2 Dasing Installation Included.
+Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. USB Dongle is required for Wifi Connection. JupyterLab setup included. JupyterLab doesn't need docker. Torch, Torch2trt, ONNX, ONNXRuntime-GPU Torchvision and TensorFlow Installation Included. ROS2 Dasing Installation Included.
 </p>
   
 ## Colaborators
@@ -119,7 +119,7 @@ chmod +x ./pytorch.sh && ./pytorch.sh
 [PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
 
 ## Install Torch2trt and ONNX <a name="torch2trt"></a>
-Installs `Torch2trt`, `ONNX` and `ONNX Runtime`.<br/>
+Installs `Torch2trt`, `ONNX` and `ONNXRuntime-GPU`.<br/>
 ```
 cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./torch2trt_onnx.sh && ./torch2trt_onnx.sh
