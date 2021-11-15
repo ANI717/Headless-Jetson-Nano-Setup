@@ -110,6 +110,7 @@ chmod +x ./pytorch.sh && ./pytorch.sh
 [PyTorch Wheel](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-9-0-now-available/72048)<br/>
 
 ## Install Torch2trt and ONNX <a name="torch2trt"></a>
+Installs `Torch2trt`, `ONNX` and `ONNX Runtime`.<br/>
 ```
 cd
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt 
