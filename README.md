@@ -119,13 +119,8 @@ chmod +x ./pytorch.sh && ./pytorch.sh
 ## Install Torch2trt and ONNX <a name="torch2trt"></a>
 Installs `Torch2trt`, `ONNX` and `ONNX Runtime`.<br/>
 ```
-cd
-git clone https://github.com/NVIDIA-AI-IOT/torch2trt 
-cd torch2trt 
-sudo -H python3 setup.py install --plugins
-echo  'alias trtexec="/usr/src/tensorrt/bin/trtexec"' >> ~/.bashrc 
-sudo -H pip3 install onnx onnxruntime
-sudo -H pip3 install numpy==1.19.4
+cd ~/Headless-Jetson-Nano-Setup
+chmod +x ./torch2trt_onnx.sh && ./torch2trt_onnx.sh
 ```
 
 ## Install TensorFlow <a name="tf"></a>
