@@ -22,7 +22,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install Torch](#torch) <br/>
 * [Install Torch2trt and ONNX](#torch2trt) <br/>
 * [Install TensorFlow](#tf) <br/>
-* [Warning](#warn) <br/>
+* [Issues](#issue) <br/>
 
 ## Install Jetson Nano Image <a name="install"></a>
 Download [balenaEtcher](https://www.balena.io/etcher/) and install it.</br>
@@ -132,7 +132,7 @@ cd ~/Headless-Jetson-Nano-Setup
 chmod +x ./tensorflow.sh && ./tensorflow.sh
 ```
 
-## Warning <a name="warn"></a>
+## Issues <a name="issue"></a>
 Installing different vesrion of `OpenCV` and `NumPy` packages will break `Gstreamer Pipeline`.<br/>
 Therefore `Albumation` package should not be installed for Deep Learning.<br/>
 Updating `Setuptools` will generate deprication error during ROS2 workspace building.<br/>
