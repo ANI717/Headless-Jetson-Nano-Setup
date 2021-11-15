@@ -139,6 +139,6 @@ chmod +x ./dashing.sh && ./dashing.sh
 [Reference](https://docs.ros.org/en/dashing/Installation/Ubuntu-Install-Debians.html)
 
 ## Warning <a name="warn"></a>
-Installing different vesrion of `OpenCV` and `NumPy` package or upgrading them will break `Gstreamer Pipeline`.<br/>
+Installing different vesrion of `OpenCV` and `NumPy` packages will break `Gstreamer Pipeline`.<br/>
 Updating `Setuptools` will generate deprication error during ROS2 workspace building.<br/>
 
