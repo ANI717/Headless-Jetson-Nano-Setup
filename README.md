@@ -14,7 +14,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Boot Jetson Nano](#boot) <br/>
 * [Wifi Connection Setup](#wifi) <br/>
 * [Download This Repository](#repository) <br/>
-* [Install All Packages](#all) <br/>
+* [One Command Install All](#all) <br/>
 * [Enable I2C Permissions](#i2c) <br/>
 * [Install Jupyter Lab](#jupytarlab) <br/>
 * [Setup Jetbot Stats](#stats) <br/>
@@ -70,7 +70,7 @@ Once login completes, the Micro-USB cable can be disconnected.
 git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
 ```
 
-## Install All Packages <a name="all"></a>
+## One Command Install All <a name="all"></a>
 Installs `Jupyter Lab`, `ROS2 Dashing`, `PyTorch`, `Torchvision`.<br/>
 Enable I2C Permissions.<br/>
 Sets Jetbot Stats.<br/>
