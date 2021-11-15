@@ -10,7 +10,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 [Animesh Bala Ani](https://www.linkedin.com/in/ani717/)
 
 ## Table of Contents
-* [Install Jetson Nano Image OS on microSD card](#install) <br/>
+* [Install Jetson Nano Image](#install) <br/>
 * [Boot Jetson Nano](#boot) <br/>
 * [Wifi Connection Setup](#wifi) <br/>
 * [Download This Repository](#repository) <br/>
@@ -24,7 +24,7 @@ Headless Jetson Nano 4GB setup with with Micro-USB cable Without Using Monitor. 
 * [Install TensorFlow](#tf) <br/>
 * [Warning](#warn) <br/>
 
-## Install Jetson Nano Image OS on microSD card <a name="install"></a>
+## Install Jetson Nano Image <a name="install"></a>
 Download [balenaEtcher](https://www.balena.io/etcher/) and install it.</br>
 Download [Jetson Nano Developer Kit SD Card Image](https://developer.nvidia.com/jetson-nano-sd-card-image-45-0), and write it on a microSD card with **balenaEtcher**.</br>
 
