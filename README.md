@@ -133,7 +133,9 @@ chmod +x ./tensorflow.sh && ./tensorflow.sh
 ```
 
 ## Issues <a name="issue"></a>
-Installing different vesrion of `OpenCV` and `NumPy` packages will break `Gstreamer Pipeline`.<br/>
+Installing or modifying `OpenCV` will break `Gstreamer Pipeline`.<br/>
 Therefore `Albumation` package should not be installed for Deep Learning.<br/>
+Also `Numpy` version `1.19.4` is required to work `Gstreamer Pipeline`.<br/>
+
 Updating `Setuptools` will generate deprication error during ROS2 workspace building.<br/>
 
