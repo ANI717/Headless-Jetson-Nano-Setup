@@ -72,7 +72,7 @@ git clone https://github.com/ANI717/Headless-Jetson-Nano-Setup
 
 ## One Command Install All <a name="all"></a>
 Installs `Jupyter Lab`, `ROS2 Dashing`, `PyTorch`, `Torchvision`, `Torch2trt`, `ONNX`, `ONNXRuntime-GPU`, `Inputs` and `Adafruit_MotorHat`.<br/>
-Enable I2C Permissions.<br/>
+Enables I2C Permissions.<br/>
 Sets Jetbot Stats.<br/>
 Takes aroud 20 minutes to 50 minutes.<br/>
 ```
