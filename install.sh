@@ -7,3 +7,4 @@ sudo usermod -aG i2c $USER
 ./pytorch.sh
 ./dashing.sh
 ./torch2trt_onnx.sh
+sudo -H python3 -m pip install inputs Adafruit_MotorHat
