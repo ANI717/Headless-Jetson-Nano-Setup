@@ -134,6 +134,6 @@ chmod +x ./tensorflow.sh && ./tensorflow.sh
 
 ## Warning <a name="warn"></a>
 Installing different vesrion of `OpenCV` and `NumPy` packages will break `Gstreamer Pipeline`.<br/>
-Therefore `Albumation` package should not be installed.
+Therefore `Albumation` package should not be installed for Deep Learning.<br/>
 Updating `Setuptools` will generate deprication error during ROS2 workspace building.<br/>
 
